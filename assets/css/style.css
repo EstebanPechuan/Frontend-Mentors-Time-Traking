@@ -21,11 +21,10 @@ main {
   height: calc(100% - 42px);
   padding: 60px 50px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(150px, 250px));
   gap: 20px;
 }
 main .profile {
-  max-width: 200px;
   grid-row: span 2;
   background: hsl(235deg, 46%, 20%);
   border-radius: 10px;
@@ -71,7 +70,7 @@ main .profile__time button {
   border: none;
   cursor: pointer;
 }
-main .profile__time button:hover {
+main .profile__time button:hover, main .profile__time button.active {
   color: #fff;
 }
 main .track {
