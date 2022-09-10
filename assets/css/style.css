@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: hsl(226deg, 43%, 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  height: calc(100% - 42px);
+  padding: 60px 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+main .profile {
+  max-width: 200px;
+  grid-row: span 2;
+  background: hsl(235deg, 46%, 20%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+main .profile__info {
+  height: 100%;
+  background: hsl(246deg, 80%, 60%);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+main .profile__info img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+main .profile__info p {
+  margin-top: auto;
+  color: hsl(236deg, 100%, 87%);
+}
+main .profile__info h1 {
+  margin-bottom: auto;
+  color: #fff;
+  font-size: 36px;
+}
+main .profile__time {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .profile__time button {
+  display: block;
+  width: fit-content;
+  color: hsl(235deg, 45%, 61%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+main .profile__time button:hover {
+  color: #fff;
+}
+main .track {
+  background: #000;
+  padding-top: 30px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+main .track > img {
+  width: 50px;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+main .track:nth-of-type(2) {
+  background: hsl(15deg, 100%, 70%);
+}
+main .track:nth-of-type(3) {
+  background: hsl(195deg, 74%, 62%);
+}
+main .track:nth-of-type(4) {
+  background: hsl(348deg, 100%, 68%);
+}
+main .track:nth-of-type(5) {
+  background: hsl(145deg, 58%, 55%);
+}
+main .track:nth-of-type(5) img {
+  top: 0 !important;
+}
+main .track:nth-of-type(6) {
+  background: hsl(264deg, 64%, 52%);
+}
+main .track:nth-of-type(7) {
+  background: hsl(43deg, 84%, 65%);
+}
+main .track__info {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background: hsl(235deg, 46%, 20%);
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 10;
+}
+main .track__info:hover {
+  background: hsl(235deg, 28%, 43%);
+}
+main .track__info__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .track__info__header h3 {
+  font-weight: 500;
+}
+main .track__info__header .dots {
+  color: hsl(236deg, 100%, 87%);
+  cursor: pointer;
+}
+main .track__info__header .dots:hover {
+  opacity: 0.8;
+}
+main .track__info__numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .track__info__numbers h2 {
+  font-size: 40px;
+}
+main .track__info__numbers p {
+  color: hsl(236deg, 100%, 87%);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.attribution {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 11px;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+  font-size: 11px !important;
+}
+.attribution h2 {
+  display: inline;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profile {
+    max-width: 100% !important;
+    grid-row: span 1 !important;
+    grid-column: span 2;
+  }
+  .profile__time {
+    justify-content: space-between;
+    flex-direction: row !important;
+  }
+  .track__info__numbers {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .attribution {
+    position: static;
+  }
+}
+@media (max-width: 500px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .profile {
+    grid-column: span 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

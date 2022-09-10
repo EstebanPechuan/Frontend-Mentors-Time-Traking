@@ -8,73 +8,150 @@
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
+  <main>
+    <div class="profile">
+      <div class="profile__info">
+        <img src="assets/images/image-jeremy.png" alt="">
 
-  Daily
-  Weekly
-  Monthly
+        <p>Report for</p>
+        <h1>Jeremy Robson</h1>
+      </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+      <div class="profile__time">
+        <button>Daily</button>
+        <button>Weekly</button>
+        <button>Monthly</button>
+      </div>
+    </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    <div class="track">
+      <img src="assets/images/icon-work.svg" alt="work">
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+      <div class="track__info">
+        <div class="track__info__header">
+          <h3>Work</h3>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+          <div class="dots">
+            <img src="assets/images/icon-ellipsis.svg" alt="Ellipsis">
+          </div>
+        </div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+        <div class="track__info__numbers">
+          <h2>32hrs</h2>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+          <p>Last Week - 36hs</p>
+        </div>
+      </div>
+    </div>
+    <div class="track">
+      <img src="assets/images/icon-play.svg" alt="play">
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="track__info">
+        <div class="track__info__header">
+          <h3>Play</h3>
+
+          <div class="dots">
+            <img src="assets/images/icon-ellipsis.svg" alt="Ellipsis">
+          </div>
+        </div>
+
+        <div class="track__info__numbers">
+          <h2>32hrs</h2>
+
+          <p>Last Week - 36hs</p>
+        </div>
+      </div>
+    </div>
+    <div class="track">
+      <img src="assets/images/icon-study.svg" alt="study">
+
+      <div class="track__info">
+        <div class="track__info__header">
+          <h3>Study</h3>
+
+          <div class="dots">
+            <img src="assets/images/icon-ellipsis.svg" alt="Ellipsis">
+          </div>
+        </div>
+
+        <div class="track__info__numbers">
+          <h2>32hrs</h2>
+
+          <p>Last Week - 36hs</p>
+        </div>
+      </div>
+    </div>
+    <div class="track">
+      <img src="assets/images/icon-exercise.svg" alt="exercise">
+
+      <div class="track__info">
+        <div class="track__info__header">
+          <h3>Exercise</h3>
+
+          <div class="dots">
+            <img src="assets/images/icon-ellipsis.svg" alt="Ellipsis">
+          </div>
+        </div>
+
+        <div class="track__info__numbers">
+          <h2>32hrs</h2>
+
+          <p>Last Week - 36hs</p>
+        </div>
+      </div>
+    </div>
+    <div class="track">
+      <img src="assets/images/icon-social.svg" alt="social">
+
+      <div class="track__info">
+        <div class="track__info__header">
+          <h3>Social</h3>
+
+          <div class="dots">
+            <img src="assets/images/icon-ellipsis.svg" alt="Ellipsis">
+          </div>
+        </div>
+
+        <div class="track__info__numbers">
+          <h2>32hrs</h2>
+
+          <p>Last Week - 36hs</p>
+        </div>
+      </div>
+    </div>
+    <div class="track">
+      <img src="assets/images/icon-self-care.svg" alt="care">
+
+      <div class="track__info">
+        <div class="track__info__header">
+          <h3>Self Care</h3>
+
+          <div class="dots">
+            <img src="assets/images/icon-ellipsis.svg" alt="Ellipsis">
+          </div>
+        </div>
+
+        <div class="track__info__numbers">
+          <h2>32hrs</h2>
+
+          <p>Last Week - 36hs</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="attribution">
+    Challenge by <h2><a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></h2>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/EstebanPechuan">Esteban Pechuan</a>.
+  </footer>
 </body>
 </html>
